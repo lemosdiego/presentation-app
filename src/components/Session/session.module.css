@@ -1,19 +1,273 @@
 @media (min-width: 320px) and (max-width: 480px) {
-}
-@media (min-width: 481px) and (max-width: 768px) {
-}
-@media (min-width: 769px) and (max-width: 1200x) {
-}
-@media (min-width: 1201px) {
   .session {
-    border: solid 10px orange;
-    width: 70%;
+    width: 100%;
+    height: 55%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .additional_information {
+    height: 100%;
+    width: 100%;
     border: solid 2px blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    text-align: center;
+  }
+  .additional_information h2 {
+    font-size: 1.5rem;
+  }
+  .additional_information h3 {
+    font-size: 1.1rem;
+  }
+  .additional_information p {
+    font-size: 0.9rem;
+  }
+  .additional_information button {
+    width: 100px;
+    height: 40px;
+  }
+  /* SOBRE */
+  .sobre {
+    width: 100%;
+    height: 100%;
+    border: solid 2px blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    text-align: center;
+  }
+  .sobre h2 {
+    font-size: 1rem;
+  }
+  .sobre p {
+    font-size: 0.7rem;
+    width: 100%;
+  }
+  /* GOSTOS PESSOAIS */
+  .personal_tastes {
+    width: 100%;
+    height: 100%;
+    border: solid 2px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+  .personal_tastes h2 {
+    font-size: 1.4rem;
+  }
+  .personal_tastes p {
+    font-size: 0.8rem;
+    width: 95%;
+  }
+  /* MOTIVAÇÕES */
+
+  .motivations {
+    width: 100%;
+    height: 100%;
+    border: solid 2px rgb(212, 0, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .motivations h2 {
+    font-size: 1.4rem;
+  }
+  .motivations p {
+    font-size: 0.9rem;
+    width: 95%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .session {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .additional_information {
+    height: 100%;
+    width: 100%;
+    border: solid 2px blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    text-align: center;
+  }
+  .additional_information h2 {
+    font-size: 1.7rem;
+  }
+  .additional_information h3 {
+    font-size: 1.2rem;
+  }
+  .additional_information p {
+    font-size: 1rem;
+  }
+  .additional_information button {
+    width: 100px;
+    height: 40px;
+  }
+  /* SOBRE */
+  .sobre {
+    width: 100%;
+    height: 100%;
+    border: solid 2px blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+  .sobre h2 {
+    font-size: 1.2rem;
+  }
+  .sobre p {
+    font-size: 0.7rem;
+    width: 95%;
+  }
+  /* GOSTOS PESSOAIS */
+  .personal_tastes {
+    width: 100%;
+    height: 100%;
+    border: solid 2px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+  .personal_tastes h2 {
+    font-size: 1.4rem;
+  }
+  .personal_tastes p {
+    font-size: 0.9rem;
+    width: 85%;
+  }
+  /* MOTIVAÇÕES */
+
+  .motivations {
+    width: 100%;
+    height: 100%;
+    border: solid 2px rgb(212, 0, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .motivations h2 {
+    font-size: 1.4rem;
+  }
+  .motivations p {
+    font-size: 1rem;
+    width: 85%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .session {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #fff;
+  }
+  .additional_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    text-align: center;
+  }
+  .additional_information h2 {
+    font-size: 1.8rem;
+  }
+  .additional_information h3 {
+    font-size: 1.3rem;
+  }
+  .additional_information p {
+    font-size: 1.2rem;
+  }
+  .additional_information button {
+    width: 110px;
+    height: 40px;
+  }
+  /* SOBRE */
+  .sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px;
+  }
+  .sobre h2 {
+    font-size: 1.4rem;
+  }
+  .sobre p {
+    font-size: 0.9rem;
+    width: 95%;
+  }
+  /* GOSTOS PESSOAIS */
+  .personal_tastes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding: 30px;
+  }
+  .personal_tastes h2 {
+    font-size: 1.8rem;
+  }
+  .personal_tastes p {
+    font-size: 1rem;
+    width: 90%;
+  }
+  /* MOTIVAÇÕES */
+
+  .motivations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding: 30px;
+  }
+  .motivations h2 {
+    font-size: 1.8rem;
+  }
+  .motivations p {
+    font-size: 1rem;
+    width: 80%;
+  }
+}
+@media (min-width: 1201px) {
+  .session {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #fff;
+  }
+  .additional_information {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,13 +276,13 @@
     text-align: left;
   }
   .additional_information h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .additional_information h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .additional_information p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .additional_information button {
     width: 140px;
@@ -36,7 +290,6 @@
   }
   /* SOBRE */
   .sobre {
-    border: solid 10px blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,15 +297,14 @@
     padding: 20px;
   }
   .sobre h2 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
   .sobre p {
     font-size: 1rem;
-    width: 90%;
+    width: 85%;
   }
   /* GOSTOS PESSOAIS */
   .personal_tastes {
-    border: solid 10px red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,16 +312,15 @@
     padding: 20px;
   }
   .personal_tastes h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
   .personal_tastes p {
-    font-size: 1.1rem;
-    width: 90%;
+    font-size: 1.2rem;
+    width: 80%;
   }
   /* MOTIVAÇÕES */
 
   .motivations {
-    border: solid 10px rgb(212, 0, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,10 +328,10 @@
     padding: 20px;
   }
   .motivations h2 {
-    font-size: 1.9rem;
+    font-size: 2.1rem;
   }
   .motivations p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     width: 80%;
   }
 }
