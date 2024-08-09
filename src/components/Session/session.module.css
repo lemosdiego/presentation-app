@@ -265,7 +265,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 1px #fff;
   }
   .additional_information {
     display: flex;
@@ -334,4 +333,9 @@
     font-size: 1.3rem;
     width: 80%;
   }
+}
+
+.session {
+  background-color: #333;
+  border-radius: 0 20px 20px 0;
 }

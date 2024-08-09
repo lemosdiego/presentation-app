@@ -51,12 +51,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    border: solid 1px #fff;
+    gap: 50px;
   }
   .menu button {
-    width: 150px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
     cursor: pointer;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    background-color: #e53939;
   }
+}
+.menu button {
+  color: #ffffff;
+}
+.menu button:hover {
+  background-color: #e23232c9;
 }

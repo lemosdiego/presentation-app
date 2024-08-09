@@ -6,11 +6,11 @@ const Menu = ({ setCurrentSession }) => {
   return (
     <nav className={Styles.menu}>
       {/* Botões que mudam a sessão ao clicar */}
-      <button onClick={() => setCurrentSession("session1")}>Session 1</button>
-      <button onClick={() => setCurrentSession("session2")}>Session 2</button>
-      <button onClick={() => setCurrentSession("session3")}>Session 3</button>
-      <button onClick={() => setCurrentSession("session4")}>Session 4</button>
-      <button onClick={() => setCurrentSession("session5")}>Session 5</button>
+      <button onClick={() => setCurrentSession("session1")}>Inicio</button>
+      <button onClick={() => setCurrentSession("session2")}>Sobre</button>
+      <button onClick={() => setCurrentSession("session3")}>Gostos</button>
+      <button onClick={() => setCurrentSession("session4")}>Motivações</button>
+      <button onClick={() => setCurrentSession("session5")}>Projetos</button>
     </nav>
   );
 };
