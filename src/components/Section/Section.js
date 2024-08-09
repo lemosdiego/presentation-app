@@ -19,10 +19,28 @@ const Section = ({ currentSection }) => {
           {sectionContent.paragraphs.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
-          <button>{sectionContent.certificatesButton}</button>
-          <button>{sectionContent.resumeButton}</button>
+          <a
+            className={informationStyles.button}
+            href="https://drive.google.com/drive/folders/1zDTjqRBDQOFBmYn4MCzDyF1tl_CG-VV8?usp=drive_link"
+            target="_blank"
+          >
+            {sectionContent.certificatesButton}
+          </a>
+          <a
+            className={informationStyles.button}
+            href="https://drive.google.com/file/d/1SNk7sdN6jDRRDpF_n_w4PBEpxEXvZ1IY/view?usp=drive_link "
+            target="_blank"
+          >
+            {sectionContent.resumeButton}
+          </a>
           <p>
-            Confira meu <a href="">{sectionContent.portfolioLink}</a>
+            Confira meu{" "}
+            <a
+              href="https://new-portfolio-five-indol.vercel.app/#home"
+              target="_blank"
+            >
+              {sectionContent.portfolioLink}
+            </a>
           </p>
         </div>
       )}
@@ -68,7 +86,7 @@ const Section = ({ currentSection }) => {
           <p>
             Você pode conferir meus projetos{" "}
             <a
-              href="https://new-portfolio-five-indol.vercel.app/"
+              href="https://new-portfolio-five-indol.vercel.app/#projects"
               target="_blank"
             >
               Aqui...

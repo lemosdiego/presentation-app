@@ -17,10 +17,32 @@ export const Profile = () => {
       <p>30 anos</p>
       <h4>Redes sociais:</h4>
       <ul className={Styles.social_media}>
-        <li>Whatsapp</li>
-        <li>Linkedin</li>
-        <li>Github</li>
-        <li>Instagram</li>
+        <li>
+          <a href="https://WA.me/5581982383803" target="_blank">
+            Whatsapp
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/washington-lemos-033177186/"
+            target="_blank"
+          >
+            Linkedin
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/lemosdiego" target="_blank">
+            Github
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/washington.lemos_/?hl=pt-br"
+            target="_blank"
+          >
+            Instagram
+          </a>
+        </li>
       </ul>
     </div>
   );

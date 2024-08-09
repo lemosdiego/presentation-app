@@ -92,8 +92,27 @@
   .additional_information p {
     font-size: 1.4rem;
   }
-  .additional_information button {
+  .additional_information p a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #e53939;
+  }
+  .button {
     width: 140px;
     height: 40px;
+    background-color: #e53939;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffff;
   }
+}
+
+.button:hover {
+  background-color: #e23232c9;
+}
+.additional_information p a:hover {
+  color: #e23232c9;
 }
