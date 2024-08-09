@@ -1,0 +1,19 @@
+@media (min-width: 320px) and (max-width: 480px) {
+}
+@media (min-width: 481px) and (max-width: 768px) {
+}
+@media (min-width: 769px) and (max-width: 1200x) {
+}
+@media (min-width: 1201px) {
+  .container {
+    border: solid 1px #fff;
+    width: 80%;
+    height: 80%;
+  }
+  .channel {
+    width: 100%;
+    height: 85%;
+    border: solid 2px green;
+    display: flex;
+  }
+}
