@@ -6,8 +6,40 @@
 }
 @media (min-width: 1201px) {
   .container_card {
-    border: solid 1px #fff;
-    width: 220px;
+    width: 210px;
     height: 300px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .container_card h3 {
+    color: #e53939;
+    font-size: 1.8rem;
+    width: 90%;
+    text-align: center;
+  }
+  .cardButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .cardButtons a {
+    background-color: #e53939;
+    width: 130px;
+    height: 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    border-radius: 4px;
   }
 }

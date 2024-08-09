@@ -1,0 +1,34 @@
+@media (min-width: 320px) and (max-width: 480px) {
+}
+@media (min-width: 481px) and (max-width: 768px) {
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+}
+@media (min-width: 1201px) {
+  .projects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .projects h2 {
+    font-size: 2.2rem;
+  }
+  .projects p {
+    font-size: 1.4rem;
+  }
+  .projects p a {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #e53939;
+  }
+  .container_cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+}
