@@ -1,15 +1,15 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .session {
     width: 100%;
-    height: 55%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 0 0 20px 20px;
   }
   .additional_information {
     height: 100%;
     width: 100%;
-    border: solid 2px blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +35,6 @@
   .sobre {
     width: 100%;
     height: 100%;
-    border: solid 2px blue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,7 +53,6 @@
   .personal_tastes {
     width: 100%;
     height: 100%;
-    border: solid 2px red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +72,6 @@
   .motivations {
     width: 100%;
     height: 100%;
-    border: solid 2px rgb(212, 0, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,11 +94,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 0 0 20px 20px;
   }
   .additional_information {
     height: 100%;
     width: 100%;
-    border: solid 2px blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,7 +124,6 @@
   .sobre {
     width: 100%;
     height: 100%;
-    border: solid 2px blue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,7 +142,6 @@
   .personal_tastes {
     width: 100%;
     height: 100%;
-    border: solid 2px red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,7 +161,6 @@
   .motivations {
     width: 100%;
     height: 100%;
-    border: solid 2px rgb(212, 0, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,7 +182,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 1px #fff;
+    border-radius: 0 20px 20px 0;
   }
   .additional_information {
     display: flex;
@@ -265,6 +259,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 0 20px 20px 0;
   }
   .additional_information {
     display: flex;
@@ -333,9 +328,37 @@
     font-size: 1.3rem;
     width: 80%;
   }
+
+  /* PROJETOS */
+  .projects {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container_cards {
+    border: solid 1px #fff;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .session {
   background-color: #333;
-  border-radius: 0 20px 20px 0;
+}
+.additional_information button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  background-color: #e53939;
+  border-radius: 10px;
+  color: #ffff;
+}
+.additional_information button:hover {
+  background-color: #e23232c9;
 }

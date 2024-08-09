@@ -1,5 +1,6 @@
 "use client"; // Habilita o modo client-side
 
+import Card from "../Card/Card";
 import Styles from "./session.module.css";
 
 const Session = ({ currentSession }) => {
@@ -94,7 +95,19 @@ const Session = ({ currentSession }) => {
           </p>
         </div>
       )}
-      {currentSession === "session5" && <div>session 5</div>}
+      {currentSession === "session5" && (
+        <div className={Styles.projects}>
+          <h2>Confira meus últimos projetos</h2>
+          <div className={Styles.container_cards}>
+            <Card />
+            <Card />
+            <Card />
+          </div>
+          <p>
+            Você pode conferir meus projetos <span>Aqui...</span>
+          </p>
+        </div>
+      )}
     </div>
   );
 };

@@ -1,14 +1,14 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .profile {
     width: 100%;
-    height: 45%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 8px;
     color: #fff;
-    border: solid 1px #fff;
+    border-radius: 20px 20px 0 0;
   }
   .profile p {
     font-size: 1rem;
@@ -18,7 +18,6 @@
     font-size: 1.1rem;
   }
   .social_media {
-    border: solid 2px #67f10b;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,7 +28,6 @@
     list-style: none;
   }
   .profileImage {
-    border: solid 1px #fff;
     width: 140px;
     height: 140px;
     border-radius: 50%;
@@ -50,7 +48,7 @@
     justify-content: center;
     gap: 8px;
     color: #fff;
-    border: solid 1px #fff;
+    border-radius: 20px 20px 0 0;
   }
   .profile p {
     font-size: 1.1rem;
@@ -60,7 +58,6 @@
     font-size: 1.2rem;
   }
   .social_media {
-    border: solid 2px #67f10b;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -71,7 +68,6 @@
     list-style: none;
   }
   .profileImage {
-    border: solid 1px #fff;
     width: 160px;
     height: 160px;
     border-radius: 50%;
@@ -84,7 +80,6 @@
 }
 @media (min-width: 769px) and (max-width: 1200px) {
   .profile {
-    border: solid 1px #67f10b;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -92,6 +87,7 @@
     justify-content: center;
     gap: 10px;
     color: #fff;
+    border-radius: 20px 0 0 20px;
   }
   .profile p {
     font-size: 1.2rem;
@@ -110,7 +106,6 @@
     list-style: none;
   }
   .profileImage {
-    border: solid 1px #fff;
     width: 190px;
     height: 190px;
     border-radius: 50%;
@@ -130,6 +125,7 @@
     justify-content: center;
     gap: 10px;
     color: #fff;
+    border-radius: 20px 0 0 20px;
   }
   .profile p {
     font-size: 1.3rem;
@@ -156,7 +152,6 @@
 
 .profile {
   background-color: #e23232c9;
-  border-radius: 20px 0 0 20px;
 }
 .img {
   width: 100%;
