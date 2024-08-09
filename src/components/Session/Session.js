@@ -1,16 +1,20 @@
-"use client"; // Habilita o modo client-side
-
+"use client";
+import sessionStyles from "./sessionStyles.module.css";
+import informationStyles from "./informationStyles.module.css";
+import sobreStyles from "./sobreStyles.module.css";
+import tastesStyles from "./tastesStyles.module.css";
+import motivationStyles from "./motivationStyles.module.css";
+import projectsStyles from "./projectsStyles.module.css";
 import Card from "../Card/Card";
-import Styles from "./session.module.css";
 
 const Session = ({ currentSession }) => {
   return (
-    <div className={Styles.session}>
+    <div className={sessionStyles.session}>
       {currentSession === "session1" && (
-        <div className={Styles.additional_information}>
+        <div className={informationStyles.additional_information}>
           <h2>Formação acadêmica:</h2>
-          <p>Análise e Desenvolvimento de Sistemas - Concluido</p>
-          <p>Engeharia de Software - Cursando</p>
+          <p>Análise e Desenvolvimento de Sistemas - Concluído</p>
+          <p>Engenharia de Software - Cursando</p>
           <h3>Certificados:</h3>
           <button>Certificados</button>
           <h3>Currículo:</h3>
@@ -21,7 +25,7 @@ const Session = ({ currentSession }) => {
         </div>
       )}
       {currentSession === "session2" && (
-        <div className={Styles.sobre}>
+        <div className={sobreStyles.sobre}>
           <h2>Sobre mim</h2>
           <p>
             Olá, sou Washington Lemos. Sou apaixonado por tecnologia e
@@ -55,7 +59,7 @@ const Session = ({ currentSession }) => {
         </div>
       )}
       {currentSession === "session3" && (
-        <div className={Styles.personal_tastes}>
+        <div className={tastesStyles.personal_tastes}>
           <h2>Gostos Pessoais</h2>
           <p>
             Sou uma pessoa apaixonada por viajar e explorar novos lugares. Entre
@@ -78,7 +82,7 @@ const Session = ({ currentSession }) => {
         </div>
       )}
       {currentSession === "session4" && (
-        <div className={Styles.motivations}>
+        <div className={motivationStyles.motivations}>
           <h2>Motivações</h2>
           <p>
             Minha principal motivação para participar da comunidade Código Certo
@@ -96,11 +100,9 @@ const Session = ({ currentSession }) => {
         </div>
       )}
       {currentSession === "session5" && (
-        <div className={Styles.projects}>
+        <div className={projectsStyles.projects}>
           <h2>Confira meus últimos projetos</h2>
-          <div className={Styles.container_cards}>
-            <Card />
-            <Card />
+          <div className={projectsStyles.container_cards}>
             <Card />
           </div>
           <p>

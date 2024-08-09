@@ -1,0 +1,70 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  .sobre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    text-align: center;
+  }
+  .sobre h2 {
+    font-size: 1rem;
+  }
+  .sobre p {
+    font-size: 0.7rem;
+    width: 100%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .sobre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+  .sobre h2 {
+    font-size: 1.2rem;
+  }
+  .sobre p {
+    font-size: 0.7rem;
+    width: 95%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px;
+  }
+  .sobre h2 {
+    font-size: 1.4rem;
+  }
+  .sobre p {
+    font-size: 0.9rem;
+    width: 95%;
+  }
+}
+@media (min-width: 1201px) {
+  .sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  .sobre h2 {
+    font-size: 1.9rem;
+  }
+  .sobre p {
+    font-size: 1rem;
+    width: 85%;
+  }
+}
