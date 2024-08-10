@@ -156,6 +156,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  margin-top: 90px;
 }
 .img {
   border-radius: 50%;

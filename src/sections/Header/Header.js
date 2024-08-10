@@ -23,23 +23,39 @@ const Header = () => {
   return (
     <>
       <div className={StylesHeader.container_menu}>
-        <div className={StylesHeader.icon}>
-          <img src="/img/codigocerto.png" alt="Icone codigo certo" />
+        <div className={StylesHeader.menu}>
+          <div className={StylesHeader.icon}>
+            <img src="/img/codigocerto.png" alt="Icone codigo certo" />
+          </div>
+          <p className={StylesHeader.abrir} id="abrir" onClick={abrirMenu}>
+            Menu
+          </p>
+          <p className={StylesHeader.fechar} id="fechar" onClick={fecharMenu}>
+            Fechar
+          </p>
         </div>
-        <p className={StylesHeader.abrir} id="abrir" onClick={abrirMenu}>
-          Menu
-        </p>
-        <p className={StylesHeader.fechar} id="fechar" onClick={fecharMenu}>
-          Fechar
-        </p>
       </div>
       <header className={StylesHeader.header} id="header">
         <nav className={StylesHeader.nav}>
           <ul>
-            <li>Inicio</li>
-            <li>Sobre</li>
-            <li>Gostos</li>
-            <li>Motivações</li>
+            <li onClick={fecharMenu}>
+              <a href="#inicio">Inicio</a>
+            </li>
+            <li onClick={fecharMenu}>
+              <a href="#sobre">Sobre</a>
+            </li>
+            <li onClick={fecharMenu}>
+              <a href="#objetivos">Objetivos</a>
+            </li>
+            <li onClick={fecharMenu}>
+              <a href="#interesses">Interesses</a>
+            </li>
+            <li onClick={fecharMenu}>
+              <a href="#gostos">Gostos Pessoais</a>
+            </li>
+            <li onClick={fecharMenu}>
+              <a href="#motivacoes">Motivações</a>
+            </li>
           </ul>
         </nav>
       </header>

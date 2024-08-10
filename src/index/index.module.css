@@ -6,3 +6,10 @@
 }
 @media (min-width: 1201px) {
 }
+.index {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}

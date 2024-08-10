@@ -2,7 +2,7 @@ import HomeStyles from "./HomeStyles.module.css";
 
 const Home = () => {
   return (
-    <section className={HomeStyles.home}>
+    <section className={HomeStyles.home} id="inicio">
       <div className={HomeStyles.img}>
         <img src="/img/minhafoto.png" alt="Foto Washington Lemos" />
       </div>

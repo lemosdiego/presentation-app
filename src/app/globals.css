@@ -5,12 +5,10 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
-  height: 100vh;
   background: #000000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+  color: #ffff;
 }
