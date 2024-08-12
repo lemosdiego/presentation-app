@@ -2,6 +2,7 @@ import Styles from "./index.module.css";
 import About from "@/sections/About/About";
 import Header from "@/sections/Header/Header";
 import Home from "@/sections/Home/Home";
+import Projects from "@/sections/Projects/Projects";
 
 const Index = () => {
   return (
@@ -9,6 +10,7 @@ const Index = () => {
       <Header />
       <Home />
       <About />
+      <Projects />
     </div>
   );
 };

@@ -1,63 +1,37 @@
-const sectionData = {
-  section1: {
-    title: "Formação acadêmica",
-    paragraphs: [
-      "Análise e Desenvolvimento de Sistemas - Concluído",
-      "Engenharia de Software - Cursando",
-    ],
-    certificatesButton: "Certificados",
-    resumeButton: "Currículo",
-    portfolioLink: "Portfólio",
+const slides = [
+  {
+    id: 1,
+    imageUrl: "/projetos/beerMasters.png",
+    title: "Cervejaria Beer Masters",
+    subtitle:
+      "Cerveja dos Mestres é uma cervejaria fictícia projetada para demonstrar habilidades em desenvolvimento web. O projeto foi construído com Next.js para garantir uma navegação fluida e responsiva, e Leaflet.js para integrar um mapa interativo que destaca a localização fictícia da nossa cervejaria.",
+    repoLink: "https://github.com/repo1",
+    deployLink: "https://deploy1.com",
   },
-  section2: {
-    title: "Sobre mim",
-    paragraphs: [
-      "Olá, sou Washington Lemos. Sou apaixonado por tecnologia e desenvolvimento de software, com uma forte dedicação em evoluir e crescer na área de programação. Atualmente, estou cursando Engenharia de Software e trabalhando como desenvolvedor front-end, com experiência em projetos pessoais e conhecimento em tecnologias como HTML, CSS, JavaScript, React e Next.js. Meu objetivo de carreira é consolidar minha posição na área de tecnologia e contribuir para projetos inovadores que façam a diferença. Estou sempre em busca de novos desafios e oportunidades para aprender e me aprimorar.",
-      "Objetivos de Carreira: Minha meta é me destacar na área de desenvolvimento front-end, contribuindo para projetos de impacto e alcançando reconhecimento profissional. Busco oportunidades que me permitam aplicar meus conhecimentos, aprender novas tecnologias e colaborar com equipes criativas e inovadoras.",
-      "Áreas de Interesse na Programação: Tenho interesse em desenvolvimento front-end e estou expandindo meus conhecimentos em engenharia de software, desenvolvimento full stack e banco de dados. Acredito que entender tanto o front-end quanto o back-end é crucial para criar aplicações completas e funcionais. Estou sempre em busca de novos desafios para aplicar e aprimorar essas habilidades.",
-    ],
+  {
+    id: 2,
+    imageUrl: "/projetos/fornecedor.png",
+    title: "Project 2",
+    subtitle: "Subtitle 2",
+    repoLink: "https://github.com/repo2",
+    deployLink: "https://deploy2.com",
   },
-  section3: {
-    title: "Gostos Pessoais",
-    paragraphs: [
-      "Sou uma pessoa apaixonada por viajar e explorar novos lugares. Entre os diversos destinos que já tive a oportunidade de conhecer pelo Brasil, a Chapada dos Veadeiros se destacou como o mais marcante. Lá, tive a chance de me conectar profundamente com a natureza através de suas cachoeiras deslumbrantes e trilhas revitalizantes. A natureza exerce um efeito renovador em mim, e sempre busco estar em contato com ela.",
-      "Além das viagens, tenho um grande apreço por esportes como futebol e ciclismo, que me ajudam a manter um estilo de vida ativo e saudável. No universo dos games, sou fã do estilo battlegrounds, que sempre me proporciona momentos de diversão e desafio. Valorizo muito o tempo com minha família e adoro aproveitar os fins de semana para estar com eles, seja em atividades ao ar livre ou em momentos de lazer.",
-      "Sou um grande apreciador de filmes e séries, e meus gêneros preferidos são os de guerra e de heróis. As histórias intensas e inspiradoras desses gêneros sempre me envolvem e me fascinam.",
-    ],
+  {
+    id: 3,
+    imageUrl: "/projetos/desafio.png",
+    title: "Project 3",
+    subtitle: "Subtitle 3",
+    repoLink: "https://github.com/repo3",
+    deployLink: "https://deploy3.com",
   },
-  section4: {
-    title: "Motivações",
-    paragraphs: [
-      "Minha principal motivação para participar da comunidade Código Certo Coders é a oportunidade de crescer profissionalmente e me conectar com outros desenvolvedores apaixonados por tecnologia. Acredito que a comunidade oferece um ambiente enriquecedor para compartilhar conhecimentos, aprender novas habilidades e colaborar em projetos desafiadores. Quero me envolver ativamente, contribuir com minhas habilidades e, ao mesmo tempo, absorver experiências e insights de outros membros. Estou determinado a utilizar essa plataforma para acelerar minha evolução na área de desenvolvimento front-end, alcançar meus objetivos de carreira e mostrar meu potencial em um espaço que valoriza a inovação e o aprendizado contínuo.",
-    ],
+  {
+    id: 4,
+    imageUrl: "/projetos/portfolio.png",
+    title: "Project 4",
+    subtitle: "Subtitle 4",
+    repoLink: "https://github.com/repo4",
+    deployLink: "https://deploy4.com",
   },
-  section5: {
-    title: "Confira meus últimos projetos",
-    paragraphs: [
-      "Confira meus últimos projetos em desenvolvimento. Você pode visualizar e acompanhar o progresso dos projetos que estou trabalhando atualmente.",
-    ],
-    cards: [
-      {
-        title: "Sistema de Pagamento",
-        image: "/projetos/teste.png", // Atualize o caminho da imagem
-        repoLink: "https://github.com/lemosdiego/vflows-teste.git", // Link para o repositório
-        deployLink: "https://vflows-teste.vercel.app/", // Link para o deploy
-      },
-      {
-        title: "Cadastro Fornecedor",
-        image: "/projetos/desafio.png", // Atualize o caminho da imagem
+];
 
-        repoLink: "https://github.com/lemosdiego/DesafioFront-End-Woovi.git", // Link para o repositório
-        deployLink: "https://desafio-front-end-woovi-kappa.vercel.app/", // Link para o deploy
-      },
-      {
-        title: "Beer Masters",
-        image: "/projetos/beerMasters.png", // Atualize o caminho da imagem
-        repoLink: "https://github.com/lemosdiego/beer-masters.git", // Link para o repositório
-        deployLink: "https://beer-masters.vercel.app/", // Link para o deploy
-      },
-    ],
-  },
-};
-
-export default sectionData;
+export default slides;
