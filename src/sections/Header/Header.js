@@ -57,16 +57,30 @@ const Header = () => {
         </div>
         <div className={StylesHeader.media}>
           <div className={StylesHeader.icons}>
-            <img src="icons/whats.svg" alt="Icone Whatsapp" />
+            <a href="https://WA.me/5581982383803" target="_blank">
+              <img src="icons/whats.svg" alt="Icone Whatsapp" />
+            </a>
           </div>
           <div className={StylesHeader.icons}>
-            <img src="icons/linkedin.svg" alt="Icone LinkedIn" />
+            <a
+              href="https://www.linkedin.com/in/washington-lemos-033177186/"
+              target="_blank"
+            >
+              <img src="icons/linkedin.svg" alt="Icone LinkedIn" />
+            </a>
           </div>
           <div className={StylesHeader.icons}>
-            <img src="icons/github.svg" alt="Icone GitHub" />
+            <a href="https://github.com/lemosdiego" target="_blank">
+              <img src="icons/github.svg" alt="Icone GitHub" />
+            </a>
           </div>
           <div className={StylesHeader.icons}>
-            <img src="icons/insta.svg" alt="Icone Instagram" />
+            <a
+              href="https://www.instagram.com/washington.lemos_/?hl=pt-br"
+              target="_blank"
+            >
+              <img src="icons/insta.svg" alt="Icone Instagram" />
+            </a>
           </div>
         </div>
       </div>

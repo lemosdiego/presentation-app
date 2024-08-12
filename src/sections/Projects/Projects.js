@@ -46,14 +46,14 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button>GitHub Repo</button>
+                  <button>Repositório</button>
                 </a>
                 <a
                   href={slide.deployLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button>Live Demo</button>
+                  <button>Deploy</button>
                 </a>
               </div>
             </div>
