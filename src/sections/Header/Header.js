@@ -1,9 +1,12 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import StylesHeader from "./StylesHeader.module.css";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const headerRef = useRef(null);
+  const abrirRef = useRef(null);
+  const fecharRef = useRef(null);
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -17,11 +20,21 @@ const Header = () => {
   }, [isMenuOpen]);
 
   const abrirMenu = () => {
-    setIsMenuOpen(true);
+    if (headerRef.current && abrirRef.current && fecharRef.current) {
+      headerRef.current.style.display = "flex";
+      abrirRef.current.style.display = "none";
+      fecharRef.current.style.display = "block";
+      setIsMenuOpen(true);
+    }
   };
 
   const fecharMenu = () => {
-    setIsMenuOpen(false);
+    if (headerRef.current && abrirRef.current && fecharRef.current) {
+      headerRef.current.style.display = "none";
+      abrirRef.current.style.display = "block";
+      fecharRef.current.style.display = "none";
+      setIsMenuOpen(false);
+    }
   };
 
   return (
@@ -31,10 +44,14 @@ const Header = () => {
           <div className={StylesHeader.icon}>
             <img src="/img/codigocerto.png" alt="Icone codigo certo" />
           </div>
-          <p className={StylesHeader.abrir} id="abrir" onClick={abrirMenu}>
+          <p className={StylesHeader.abrir} ref={abrirRef} onClick={abrirMenu}>
             Menu
           </p>
-          <p className={StylesHeader.fechar} id="fechar" onClick={fecharMenu}>
+          <p
+            className={StylesHeader.fechar}
+            ref={fecharRef}
+            onClick={fecharMenu}
+          >
             Fechar
           </p>
         </div>
@@ -55,7 +72,7 @@ const Header = () => {
       </div>
       <header
         className={StylesHeader.header}
-        id="header"
+        ref={headerRef}
         style={{ display: isMenuOpen ? "flex" : "none" }}
       >
         <nav className={StylesHeader.nav}>
