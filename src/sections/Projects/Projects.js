@@ -27,7 +27,7 @@ const Projects = () => {
   };
 
   return (
-    <section className={StylesProjects.projects}>
+    <section className={StylesProjects.projects} id="projetos">
       <h2>Últimos Projetos</h2>
       <div className={StylesProjects.slideshow_container}>
         {slides.map((slide, index) => (

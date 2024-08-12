@@ -1,25 +1,29 @@
 "use client";
+import { useEffect, useState } from "react";
 import StylesHeader from "./StylesHeader.module.css";
 
 const Header = () => {
-  function abrirMenu() {
-    const header = document.querySelector("#header");
-    const fechar = document.querySelector("#fechar");
-    const abrir = document.querySelector("#abrir");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    header.style.display = "flex";
-    fechar.style.display = "block";
-    abrir.style.display = "none";
-  }
-  function fecharMenu() {
-    const header = document.querySelector("#header");
-    const fechar = document.querySelector("#fechar");
-    const abrir = document.querySelector("#abrir");
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
 
-    header.style.display = "none";
-    fechar.style.display = "none";
-    abrir.style.display = "block";
-  }
+  const abrirMenu = () => {
+    setIsMenuOpen(true);
+  };
+
+  const fecharMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       <div className={StylesHeader.container_menu}>
@@ -34,8 +38,26 @@ const Header = () => {
             Fechar
           </p>
         </div>
+        <div className={StylesHeader.media}>
+          <div className={StylesHeader.icons}>
+            <img src="icons/whats.svg" alt="Icone Whatsapp" />
+          </div>
+          <div className={StylesHeader.icons}>
+            <img src="icons/linkedin.svg" alt="Icone LinkedIn" />
+          </div>
+          <div className={StylesHeader.icons}>
+            <img src="icons/github.svg" alt="Icone GitHub" />
+          </div>
+          <div className={StylesHeader.icons}>
+            <img src="icons/insta.svg" alt="Icone Instagram" />
+          </div>
+        </div>
       </div>
-      <header className={StylesHeader.header} id="header">
+      <header
+        className={StylesHeader.header}
+        id="header"
+        style={{ display: isMenuOpen ? "flex" : "none" }}
+      >
         <nav className={StylesHeader.nav}>
           <ul>
             <li onClick={fecharMenu}>
@@ -55,6 +77,9 @@ const Header = () => {
             </li>
             <li onClick={fecharMenu}>
               <a href="#motivacoes">Motivações</a>
+            </li>
+            <li onClick={fecharMenu}>
+              <a href="#projetos">Projetos</a>
             </li>
           </ul>
         </nav>
