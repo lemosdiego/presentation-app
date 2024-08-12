@@ -1,3 +1,4 @@
+import Footer from "@/sections/Footer/Footer";
 import Styles from "./index.module.css";
 import About from "@/sections/About/About";
 import Header from "@/sections/Header/Header";
@@ -11,6 +12,7 @@ const Index = () => {
       <Home />
       <About />
       <Projects />
+      <Footer />
     </div>
   );
 };

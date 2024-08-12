@@ -10,7 +10,7 @@ const Projects = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 10000);
     return () => clearInterval(interval);
   }, [currentSlide]);
 
