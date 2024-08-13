@@ -11,7 +11,7 @@ const slides = [
   {
     id: 2,
     imageUrl: "/projetos/fornecedor.png",
-    title: "CADASTRO FORNECEDOR/PRODUTO",
+    title: "Cadastro Fornecedor/Produto",
     subtitle:
       "Este projeto desenvolve um formulário para o cadastro de fornecedores e produtos, utilizando HTML5, CSS, Bootstrap, Fluig Style Guide, JavaScript e jQuery. O objetivo é criar uma solução intuitiva e responsiva que facilite a gestão e organização dessas informações.",
     repoLink: "https://github.com/lemosdiego/vflows-teste.git",
