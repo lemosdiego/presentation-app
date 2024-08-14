@@ -158,7 +158,7 @@
   list-style: none;
 }
 
-.home a {
+.link {
   width: 210px;
   height: 40px;
   display: flex;
@@ -169,6 +169,15 @@
   background-color: #e53939;
   text-decoration: none;
 }
-.home a:hover {
+.link:hover {
   background-color: #e53939c2;
+}
+.home p a {
+  color: #e53939;
+  font-weight: bold;
+  font-size: larger;
+  text-decoration: none;
+}
+.home p a:hover {
+  color: #e53939c2;
 }

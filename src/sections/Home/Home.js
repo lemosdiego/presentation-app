@@ -14,18 +14,25 @@ const Home = () => {
         <li>Engenharia de Software - Cursando</li>
       </ul>
       <a
+        className={HomeStyles.link}
         href="https://drive.google.com/file/d/1SNk7sdN6jDRRDpF_n_w4PBEpxEXvZ1IY/view?usp=drive_link"
         target="_blank"
       >
         Currículo
       </a>
       <a
+        className={HomeStyles.link}
         href="https://drive.google.com/drive/folders/1zDTjqRBDQOFBmYn4MCzDyF1tl_CG-VV8?usp=drive_link"
         target="_blank"
       >
         Certificados
       </a>
-      <p>Confira meu portfólio</p>
+      <p>
+        Confira meu{" "}
+        <a href="https://new-portfolio-five-indol.vercel.app/" target="_blank">
+          Portfólio
+        </a>
+      </p>
     </section>
   );
 };
